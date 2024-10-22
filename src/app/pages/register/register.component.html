@@ -1,0 +1,20 @@
+<div class="input-container">
+  <label for="input2">Email</label>
+  <input type="text" id="input2" placeholder="Seu endereço de email" [(ngModel)]="email"/>
+</div>
+
+<div class="input-container">
+  <label for="input3">Senha</label>
+  <input type="password" id="input3" placeholder="Sua senha" [(ngModel)]="pswd"/>
+</div>
+
+<div class="button-container">
+  <button (click)="register()">Inscreva-se</button>
+</div>
+
+<p class="signup-prompt">
+  Já tem uma conta? <a [routerLink]="['/login']" href="#" class="signup-link">Entrar</a>.
+</p>
+
+<h1 class="gradient-text">AÇO BRASIL</h1>
+

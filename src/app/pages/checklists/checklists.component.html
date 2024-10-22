@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Minhas Checklists</h2>
+  <ul>
+    <li *ngFor="let checklist of checklists">
+      <p>Verificação de Pneus: {{ checklist.verificacaoDePneus ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Luzes: {{ checklist.verificacaoDeLuzes ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Freios: {{ checklist.verificacaoDeFreios ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação do Tanque de Combustível: {{ checklist.verificacaoDoTanque ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Escapamento: {{ checklist.verificacaoDoEscapamento ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Óleo do Motor: {{ checklist.verificacaoDeOleo ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Limpadores de Para-brisa: {{ checklist.verificacaoDeLimpadores ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Sinalização: {{ checklist.verificacaoDeSinalizacao ? 'Verificado' : 'Não Verificado' }}</p>
+      <p>Verificação de Documentação: {{ checklist.verificacaoDeDocumentacao ? 'Verificado' : 'Não Verificado' }}</p>
+      <p *ngIf="checklist.problemas">Descrição de problemas: {{ checklist.problemas }}</p>
+      <hr />
+    </li>
+  </ul>
+
+  <!-- Botão para criar uma nova checklist usando routerLink -->
+  <button [routerLink]="['/dashboard/add']" class="create-checklist-button">Criar Nova Checklist</button>
+</div>

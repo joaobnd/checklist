@@ -1,0 +1,20 @@
+<h2>Checklist do Motorista</h2>
+<form>
+  <div class="checklist-item" *ngFor="let item of checklistData">
+    <label>
+      <input type="checkbox" [(ngModel)]="item.checked" name="{{item.name}}" />
+      {{ item.name }}
+    </label>
+  </div>
+
+  <div class="form-group">
+    <label for="description">Descrição de Problemas(Somente no final da jornada):</label>
+    <textarea id="description" [(ngModel)]="description" name="description" placeholder="Relate quaisquer problemas que houve na jornada..." rows="4"></textarea>
+  </div>
+
+  <div class="buttons-container">
+    <button type="reset" class="reset-button" (click)="resetChecklist()">Limpar</button>
+    <button type="submit" class="submit-button" [routerLink]="['/dashboard/checklists']" (click)="onSubmit()">Salvar Checklist</button>
+  </div>
+</form>
+

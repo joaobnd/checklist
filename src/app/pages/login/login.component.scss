@@ -1,0 +1,68 @@
+:host {
+  width: 450px;
+  max-width: 90vw;
+  border-radius: 30px;
+  border: 2px solid rgba(42, 58, 92, 0.71);
+  background: linear-gradient(123.64deg, rgba(255, 255, 255, 0) -22.71%, rgba(255, 255, 255, 0.039) 70.04%);
+  margin: 0 auto;
+
+  p {
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    text-align: center;
+  }
+
+  .gradient-text {
+    font-size: 36px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #FFFFFF, #808080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .input-container {
+    margin: 20px 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: white;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      box-sizing: border-box;
+    }
+  }
+
+}
+
+.button-container {
+  margin: 20px 15px;
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background-color: #00B894;
+    color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #00B894;
+    }
+  }
+
+}
+
+
